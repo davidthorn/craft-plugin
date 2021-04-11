@@ -1,0 +1,34 @@
+{
+    "name": "davidthorn/craft-plugin",
+    "description": "A plugin for craft cms",
+    "homepage": "https://github.com:davidthorn/craft-plugin.git",
+    "readme": "./README.md",
+    "version": "0.0.1",
+    "type": "craft-plugin",
+    "keywords": ["craft", "craftcms", "plugin", "cms", "formfields", "forms"],
+    "require": {
+        "craftcms/cms": "^3.6.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Thorn",
+            "email": "david.thorn221278@googlemail.com",
+            "homepage": "https://github.com:davidthorn",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "david.thorn221278@googlemail.com"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "davidthorn\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "David Thorn Plugin",
+        "handle": "djt_plugin"
+    }
+}

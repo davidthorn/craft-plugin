@@ -1,0 +1,107 @@
+{% import "_includes/forms" as forms %}
+
+{% set labelFieldConfig = {
+    id: "#{id}-label-field",
+    instructionsId: "#{id}-label-instructions",
+    name: labelName,
+    value: data.label,
+    class: 'nicetext',
+    placeholder: 'Enter the text for the label',
+    rows: 2
+} %}
+
+{% set placeholderFieldConfig = {
+    id: "#{id}-placeholder-field",
+    instructionsId: "#{id}-placeholder-instructions",
+    name: placeholderName,
+    value: data.placeholder,
+    class: 'nicetext',
+    placeholder: 'Enter the text for the placeholder',
+    rows: 2
+} %}
+
+{% set fieldNameConfig = {
+    id: "#{id}-fieldName-field",
+    instructionsId: "#{id}-fieldName-instructions",
+    name: fieldNameName,
+    value: data.fieldName,
+    class: 'nicetext',
+    placeholder: 'Enter the name of the input field',
+    rows: 2
+} %}
+
+<div style="margin-top: 20px!important;" class="field width-100">
+    <div class="heading">
+        <label class="required">{{ "Label"|t('app', 'Label') }}</label>
+    </div>
+    <div class="instructions">
+        <p>{{ "Enter the text that should be displayed in the label tag above the input field" }}</p>
+    </div>
+    <div class="input ltr">
+        {{ forms.text(labelFieldConfig) }}
+    </div>
+</div>
+
+<div class="field">
+    <div class="heading">
+        <label class="required">{{ "Placeholder"|t('app', 'Placeholder') }}</label>
+    </div>
+    <div class="instructions">
+        <p>{{ "Enter the text that should be displayed as the input fields placeholder" }}</p>
+    </div>
+    <div class="input ltr">
+        {{ forms.text(placeholderFieldConfig) }}
+    </div>
+</div>
+
+<div class="field">
+    <div class="heading">
+        <label class="required">{{ "Name"|t('app', 'Name') }}</label>
+    </div>
+    <div class="instructions">
+        <p>{{ "Enter the name that should be used as the input fields name" }}</p>
+    </div>
+    <div class="input ltr">
+        {{ forms.text(fieldNameConfig) }}
+    </div>
+</div>
+
+<div class="field">
+    <div class="heading">
+        <label class="required">{{ "Type"|t('app', 'Type') }}</label>
+    </div>
+    <div class="instructions">
+        <p>{{ "Select the type of input field." }}</p>
+    </div>
+    <div class="input ltr">
+        {{ forms.select({
+            name: fieldTypeName,
+            value: data.fieldType,
+            options: [
+                { label: 'Button', value: 'button' },
+                { label: 'Check Box', value: 'checkbox' },
+                { label: 'Color', value: 'color' },
+                { label: 'Date', value: 'date' },
+                { label: 'Date Time Local', value: 'datetime-local' },
+                { label: 'Email', value: 'email' },
+                { label: 'File', value: 'file' },
+                { label: 'Hidden', value: 'hidden' },
+                { label: 'Image', value: 'image' },
+                { label: 'Month', value: 'month' },
+                { label: 'Number', value: 'number' },
+                { label: 'Password', value: 'password' },
+                { label: 'Radio', value: 'radio' },
+                { label: 'Range', value: 'range' },
+                { label: 'Reset', value: 'reset' },
+                { label: 'Search', value: 'search' },
+                { label: 'Submit', value: 'submit' },
+                { label: 'Tel', value: 'tel' },
+                { label: 'Text', value: 'text' },
+                { label: 'Time', value: 'time' },
+                { label: 'Url', value: 'url' },
+                { label: 'Week', value: 'week' },
+            ]
+        }) }}
+    </div>
+</div>
+
