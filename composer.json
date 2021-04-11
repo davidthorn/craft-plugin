@@ -1,9 +1,9 @@
 {
     "name": "davidthorn/craft-plugin",
-    "description": "A plugin for craft cms",
+    "description": "A Craft CMS plugin that contains Field(s) that can be used together with Matrix Blocks to make complicated forms.",
     "homepage": "https://github.com/davidthorn/craft-plugin.git",
     "readme": "./README.md",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "type": "craft-plugin",
     "keywords": ["craft", "craftcms", "plugin", "cms", "formfields", "forms"],
     "require": {
@@ -28,7 +28,7 @@
         }
     },
     "extra": {
-        "name": "David Thorn Plugin",
+        "name": "Form Fields",
         "handle": "djt_plugin"
     }
 }
