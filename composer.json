@@ -3,7 +3,7 @@
     "description": "A plugin for craft cms",
     "homepage": "https://github.com/davidthorn/craft-plugin.git",
     "readme": "./README.md",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "type": "craft-plugin",
     "keywords": ["craft", "craftcms", "plugin", "cms", "formfields", "forms"],
     "require": {
@@ -14,7 +14,7 @@
         {
             "name": "David Thorn",
             "email": "david.thorn221278@googlemail.com",
-            "homepage": "https://github.com:davidthorn",
+            "homepage": "https://github.com/davidthorn",
             "role": "Developer"
         }
     ],
