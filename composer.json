@@ -7,7 +7,7 @@
     "type": "craft-plugin",
     "keywords": ["craft", "craftcms", "plugin", "cms", "formfields", "forms"],
     "require": {
-        "craftcms/cms": "^3.6.0"
+        "craftcms/cms": "^3.7.10"
     },
     "license": "MIT",
     "authors": [

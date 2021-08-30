@@ -21,7 +21,6 @@ use yii\db\Schema;
  */
 class FormTextField extends Field
 {
-
     /**
      *
      */
